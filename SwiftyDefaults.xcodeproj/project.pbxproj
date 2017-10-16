@@ -11,10 +11,16 @@
 		D45613371F94EF0400632559 /* SwiftyDefaults_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D45613291F94EF0400632559 /* SwiftyDefaults_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D456134C1F94EF3A00632559 /* SwiftyDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45613431F94EF3A00632559 /* SwiftyDefaults.framework */; };
 		D45613531F94EF3A00632559 /* SwiftyDefaults_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = D45613451F94EF3A00632559 /* SwiftyDefaults_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D456135D1F94EF5C00632559 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456135C1F94EF5C00632559 /* Sample.swift */; };
-		D456135E1F94EF5F00632559 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456135C1F94EF5C00632559 /* Sample.swift */; };
 		D45613601F94EF8A00632559 /* ReadWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456135F1F94EF8A00632559 /* ReadWriteTests.swift */; };
 		D45613611F94EF8A00632559 /* ReadWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456135F1F94EF8A00632559 /* ReadWriteTests.swift */; };
+		D45613631F94F75D00632559 /* DefaultsAccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613621F94F75C00632559 /* DefaultsAccessKey.swift */; };
+		D45613641F94F75D00632559 /* DefaultsAccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613621F94F75C00632559 /* DefaultsAccessKey.swift */; };
+		D45613661F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613651F94F84D00632559 /* DefaultsCompatibleType.swift */; };
+		D45613671F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613651F94F84D00632559 /* DefaultsCompatibleType.swift */; };
+		D456136A1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */; };
+		D456136B1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */; };
+		D456136D1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456136C1F94FDDA00632559 /* UserDefaults+Access.swift */; };
+		D456136E1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456136C1F94FDDA00632559 /* UserDefaults+Access.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +51,11 @@
 		D45613461F94EF3A00632559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D456134B1F94EF3A00632559 /* SwiftyDefaults-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyDefaults-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D45613521F94EF3A00632559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D456135C1F94EF5C00632559 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		D456135F1F94EF8A00632559 /* ReadWriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWriteTests.swift; sourceTree = "<group>"; };
+		D45613621F94F75C00632559 /* DefaultsAccessKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsAccessKey.swift; sourceTree = "<group>"; };
+		D45613651F94F84D00632559 /* DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsCompatibleType.swift; sourceTree = "<group>"; };
+		D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
+		D456136C1F94FDDA00632559 /* UserDefaults+Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Access.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +153,9 @@
 		D456135A1F94EF3F00632559 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D456135C1F94EF5C00632559 /* Sample.swift */,
+				D45613681F94FAF800632559 /* DefaultsCompatibleType */,
+				D45613621F94F75C00632559 /* DefaultsAccessKey.swift */,
+				D456136C1F94FDDA00632559 /* UserDefaults+Access.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -155,6 +166,15 @@
 				D456135F1F94EF8A00632559 /* ReadWriteTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		D45613681F94FAF800632559 /* DefaultsCompatibleType */ = {
+			isa = PBXGroup;
+			children = (
+				D45613651F94F84D00632559 /* DefaultsCompatibleType.swift */,
+				D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */,
+			);
+			path = DefaultsCompatibleType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D456135D1F94EF5C00632559 /* Sample.swift in Sources */,
+				D456136D1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */,
+				D45613661F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */,
+				D456136A1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */,
+				D45613631F94F75D00632559 /* DefaultsAccessKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D456135E1F94EF5F00632559 /* Sample.swift in Sources */,
+				D456136E1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */,
+				D45613671F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */,
+				D456136B1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */,
+				D45613641F94F75D00632559 /* DefaultsAccessKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
