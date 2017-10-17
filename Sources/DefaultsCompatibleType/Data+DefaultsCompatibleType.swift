@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+extension Data: DefaultsCompatibleType {
+  
+  public static func decodeValue(for defaultsObject: Any) -> Data? {
+    return defaultsObject as? Data
+  }
+  
+  public func encodeToDefaultsObject() -> Any {
+    return self
+  }
+  
+}

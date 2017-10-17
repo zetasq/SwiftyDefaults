@@ -25,6 +25,14 @@
 		D45613711F9623AE00632559 /* URL+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456136F1F9623AE00632559 /* URL+DefaultsCompatibleType.swift */; };
 		D45613761F962AC700632559 /* Data+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */; };
 		D45613771F962AC700632559 /* Data+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */; };
+		D45613791F962B3C00632559 /* Bool+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613781F962B3C00632559 /* Bool+DefaultsCompatibleType.swift */; };
+		D456137A1F962B3C00632559 /* Bool+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613781F962B3C00632559 /* Bool+DefaultsCompatibleType.swift */; };
+		D456137C1F962B4900632559 /* Int+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456137B1F962B4900632559 /* Int+DefaultsCompatibleType.swift */; };
+		D456137D1F962B4900632559 /* Int+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456137B1F962B4900632559 /* Int+DefaultsCompatibleType.swift */; };
+		D456137F1F962B5600632559 /* Float+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456137E1F962B5600632559 /* Float+DefaultsCompatibleType.swift */; };
+		D45613801F962B5600632559 /* Float+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D456137E1F962B5600632559 /* Float+DefaultsCompatibleType.swift */; };
+		D45613821F962BE500632559 /* Double+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613811F962BE500632559 /* Double+DefaultsCompatibleType.swift */; };
+		D45613831F962BE500632559 /* Double+DefaultsCompatibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45613811F962BE500632559 /* Double+DefaultsCompatibleType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,10 @@
 		D456136C1F94FDDA00632559 /* UserDefaults+Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Access.swift"; sourceTree = "<group>"; };
 		D456136F1F9623AE00632559 /* URL+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
 		D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
+		D45613781F962B3C00632559 /* Bool+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
+		D456137B1F962B4900632559 /* Int+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
+		D456137E1F962B5600632559 /* Float+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
+		D45613811F962BE500632559 /* Double+DefaultsCompatibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+DefaultsCompatibleType.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +193,10 @@
 				D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */,
 				D456136F1F9623AE00632559 /* URL+DefaultsCompatibleType.swift */,
 				D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */,
+				D45613781F962B3C00632559 /* Bool+DefaultsCompatibleType.swift */,
+				D456137B1F962B4900632559 /* Int+DefaultsCompatibleType.swift */,
+				D456137E1F962B5600632559 /* Float+DefaultsCompatibleType.swift */,
+				D45613811F962BE500632559 /* Double+DefaultsCompatibleType.swift */,
 			);
 			path = DefaultsCompatibleType;
 			sourceTree = "<group>";
@@ -365,9 +381,13 @@
 			files = (
 				D456136D1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */,
 				D45613661F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */,
+				D45613821F962BE500632559 /* Double+DefaultsCompatibleType.swift in Sources */,
+				D45613791F962B3C00632559 /* Bool+DefaultsCompatibleType.swift in Sources */,
 				D456136A1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */,
 				D45613761F962AC700632559 /* Data+DefaultsCompatibleType.swift in Sources */,
 				D45613631F94F75D00632559 /* DefaultsAccessKey.swift in Sources */,
+				D456137F1F962B5600632559 /* Float+DefaultsCompatibleType.swift in Sources */,
+				D456137C1F962B4900632559 /* Int+DefaultsCompatibleType.swift in Sources */,
 				D45613701F9623AE00632559 /* URL+DefaultsCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,9 +406,13 @@
 			files = (
 				D456136E1F94FDDA00632559 /* UserDefaults+Access.swift in Sources */,
 				D45613671F94F84D00632559 /* DefaultsCompatibleType.swift in Sources */,
+				D45613831F962BE500632559 /* Double+DefaultsCompatibleType.swift in Sources */,
+				D456137A1F962B3C00632559 /* Bool+DefaultsCompatibleType.swift in Sources */,
 				D456136B1F94FB1E00632559 /* String+DefaultsCompatibleType.swift in Sources */,
 				D45613771F962AC700632559 /* Data+DefaultsCompatibleType.swift in Sources */,
 				D45613641F94F75D00632559 /* DefaultsAccessKey.swift in Sources */,
+				D45613801F962B5600632559 /* Float+DefaultsCompatibleType.swift in Sources */,
+				D456137D1F962B4900632559 /* Int+DefaultsCompatibleType.swift in Sources */,
 				D45613711F9623AE00632559 /* URL+DefaultsCompatibleType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
