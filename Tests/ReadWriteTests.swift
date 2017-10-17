@@ -20,9 +20,14 @@ class ReadWriteTests: XCTestCase {
     super.tearDown()
   }
   
-  func testExample() {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+  func testReadWrite() {
+    UserDefaults.standard.set([URL(string: "www.google.com")!], forKey: "xyz")
+    
+    let a = UserDefaults.standard.array(forKey: "xyz")
+    let b = UserDefaults.standard.object(forKey: "xyz")
+    
+    print(a)
+    print(b)
   }
   
   func testPerformanceExample() {
