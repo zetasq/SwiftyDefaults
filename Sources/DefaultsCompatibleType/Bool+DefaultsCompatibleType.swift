@@ -9,12 +9,16 @@ import Foundation
 
 extension Bool: DefaultsCompatibleType {
   
-  public static func decodeValue(for defaultsObject: Any) -> Bool? {
-    return defaultsObject as? Bool
+  public static func reader(for defaults: UserDefaults, key: String) -> () -> Bool? {
+    return {
+      defaults.bool(forKey: key)
+    }
   }
   
-  public func encodeToDefaultsObject() -> Any {
-    return self
+  public static func writer(for defaults: UserDefaults, key: String) -> (Bool?) -> Void {
+    return {
+      defaults.set($0, forKey: key)
+    }
   }
-  
+
 }

@@ -10,15 +10,13 @@ import Foundation
 extension UserDefaults {
   
   public final func read<T>(for key: DefaultsAccessKey<T>) -> T? {
-    if let defaultsObj = self.object(forKey: key.key) {
-      return T.decodeValue(for: defaultsObj)
-    } else {
-      return nil
-    }
+    let reader = T.reader(for: self, key: key.key)
+    return reader()
   }
   
   public final func write<T>(_ val: T?, for key: DefaultsAccessKey<T>) {
-    self.set(val?.encodeToDefaultsObject(), forKey: key.key)
+    let writer = T.writer(for: self, key: key.key)
+    writer(val)
   }
   
 }

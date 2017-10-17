@@ -9,12 +9,16 @@ import Foundation
 
 extension Data: DefaultsCompatibleType {
   
-  public static func decodeValue(for defaultsObject: Any) -> Data? {
-    return defaultsObject as? Data
+  public static func reader(for defaults: UserDefaults, key: String) -> () -> Data? {
+    return {
+      defaults.data(forKey: key)
+    }
   }
   
-  public func encodeToDefaultsObject() -> Any {
-    return self
+  public static func writer(for defaults: UserDefaults, key: String) -> (Data?) -> Void {
+    return {
+      defaults.set($0, forKey: key)
+    }
   }
   
 }

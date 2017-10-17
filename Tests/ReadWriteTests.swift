@@ -10,32 +10,49 @@ import XCTest
 
 class ReadWriteTests: XCTestCase {
   
-  override func setUp() {
-    super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testString() {
+    let key = DefaultsAccessKey<String>(key: "stringKey")
+    UserDefaults.standard.write("stringVal", for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == "stringVal")
   }
   
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    super.tearDown()
+  func testBool() {
+    let key = DefaultsAccessKey<Bool>(key: "boolKey")
+    UserDefaults.standard.write(true, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == true)
   }
   
-  func testReadWrite() {
-    UserDefaults.standard.set([URL(string: "www.google.com")!], forKey: "xyz")
-    
-    let a = UserDefaults.standard.array(forKey: "xyz")
-    let b = UserDefaults.standard.object(forKey: "xyz")
-    
-    print(a)
-    print(b)
+  func testInt() {
+    let key = DefaultsAccessKey<Int>(key: "intKey")
+    UserDefaults.standard.write(128, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == 128)
   }
   
-  func testPerformanceExample() {
-    // This is an example of a performance test case.
-    self.measure {
-      // Put the code you want to measure the time of here.
-    }
+  func testFloat() {
+    let key = DefaultsAccessKey<Float>(key: "floatKey")
+    UserDefaults.standard.write(64.0, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == 64.0)
   }
   
+  func testDouble() {
+    let key = DefaultsAccessKey<Double>(key: "doubleKey")
+    UserDefaults.standard.write(1024.0, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == 1024.0)
+  }
+  
+  func testURL() {
+    let key = DefaultsAccessKey<URL>(key: "urlKey")
+    UserDefaults.standard.write(URL(string: "www.google.com")!, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == URL(string: "www.google.com")!)
+  }
+  
+  func testData() {
+    let bytes: [UInt8] = [0xFF, 0xAA]
+    let data = Data(bytes)
+    let key = DefaultsAccessKey<Data>(key: "dataKey")
+    UserDefaults.standard.write(data, for: key)
+    XCTAssert(UserDefaults.standard.read(for: key) == data)
+  }
+
 }
 

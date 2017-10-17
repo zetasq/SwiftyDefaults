@@ -9,8 +9,8 @@ import Foundation
 
 public protocol DefaultsCompatibleType {
   
-  static func decodeValue(for defaultsObject: Any) -> Self?
+  static func reader(for defaults: UserDefaults, key: String) -> () -> Self?
   
-  func encodeToDefaultsObject() -> Any
-  
+  static func writer(for defaults: UserDefaults, key: String) -> (Self?) -> Void
+
 }

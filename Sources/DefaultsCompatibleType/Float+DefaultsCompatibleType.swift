@@ -9,12 +9,16 @@ import Foundation
 
 extension Float: DefaultsCompatibleType {
   
-  public static func decodeValue(for defaultsObject: Any) -> Float? {
-    return defaultsObject as? Float
+  public static func reader(for defaults: UserDefaults, key: String) -> () -> Float? {
+    return {
+      return defaults.float(forKey: key)
+    }
   }
   
-  public func encodeToDefaultsObject() -> Any {
-    return self
+  public static func writer(for defaults: UserDefaults, key: String) -> (Float?) -> Void {
+    return {
+      defaults.set($0, forKey: key)
+    }
   }
   
 }

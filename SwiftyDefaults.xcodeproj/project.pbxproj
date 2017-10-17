@@ -191,12 +191,12 @@
 			children = (
 				D45613651F94F84D00632559 /* DefaultsCompatibleType.swift */,
 				D45613691F94FB1E00632559 /* String+DefaultsCompatibleType.swift */,
-				D456136F1F9623AE00632559 /* URL+DefaultsCompatibleType.swift */,
-				D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */,
 				D45613781F962B3C00632559 /* Bool+DefaultsCompatibleType.swift */,
 				D456137B1F962B4900632559 /* Int+DefaultsCompatibleType.swift */,
 				D456137E1F962B5600632559 /* Float+DefaultsCompatibleType.swift */,
 				D45613811F962BE500632559 /* Double+DefaultsCompatibleType.swift */,
+				D456136F1F9623AE00632559 /* URL+DefaultsCompatibleType.swift */,
+				D45613751F962AC700632559 /* Data+DefaultsCompatibleType.swift */,
 			);
 			path = DefaultsCompatibleType;
 			sourceTree = "<group>";

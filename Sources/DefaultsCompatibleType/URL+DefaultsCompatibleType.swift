@@ -9,12 +9,16 @@ import Foundation
 
 extension URL: DefaultsCompatibleType {
   
-  public static func decodeValue(for defaultsObject: Any) -> URL? {
-    return defaultsObject as? URL
+  public static func reader(for defaults: UserDefaults, key: String) -> () -> URL? {
+    return {
+      return defaults.url(forKey: key)
+    }
   }
   
-  public func encodeToDefaultsObject() -> Any {
-    return self
+  public static func writer(for defaults: UserDefaults, key: String) -> (URL?) -> Void {
+    return {
+      defaults.set($0, forKey: key)
+    }
   }
   
 }
