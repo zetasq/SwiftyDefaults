@@ -9,10 +9,10 @@ import Foundation
 
 public struct DefaultsAccessKey<T: DefaultsCompatibleType> {
   
-  public let defaultKey: String
+  public let key: String
   
-  init(defaultKey: String) {
-    self.defaultKey = defaultKey
+  public init(key: String) {
+    self.key = key
   }
   
 }
